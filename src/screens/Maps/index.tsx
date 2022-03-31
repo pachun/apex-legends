@@ -36,6 +36,7 @@ const Maps = () => {
           sections={mapsSectionListData}
           keyExtractor={(_, index) => index.toString()}
           ItemSeparatorComponent={() => <View style={{ height: 20 }} />}
+          ListFooterComponent={() => <View style={{ height: 20 }} />}
           renderSectionHeader={({ section: { title: gameType } }) => (
             <GameType gameType={gameType} />
           )}
